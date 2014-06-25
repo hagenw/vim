@@ -45,8 +45,7 @@ Here you find a collection of useful stuff you can add to your `.vimrc` file
 
 ```vim
 " copy into system clipboard
-" see:
-" http://stackoverflow.com/questions/1620018/vi-editor-copy-all-the-lines-to-clipboard
+" see: http://stackoverflow.com/questions/1620018/vi-editor-copy-all-the-lines-to-clipboard
 nnoremap <C-y> "+y
 vnoremap <C-y> "+y
 nnoremap <C-p> "+gP
