@@ -75,6 +75,23 @@ autocmd BufReadPost *
 \ endif
 ```
 
+## Matlab Block Comments
+
+Matlab has the possibility to comment a whole block by
+```Matlab
+%{
+These are all commented.
+function call, for loop, everything.
+%}
+```
+
+The default syntax file of vim 7 does not highlight these.
+Add the following lines to $VIM/syntax/matlab.vim after `syn match
+matlabComment` line
+```vim
+syn region  matlabBlockComment        start=+%{+    end=+%}+
+HiLink      matlabBlockComment        Comment
+```
 
 ## License
 
