@@ -75,6 +75,15 @@ autocmd BufReadPost *
 \ endif
 ```
 
+## Per File Config
+
+You can add vim configuration settings directly to a given file by including a
+corresponding line. Most of the time this is done at the end of the file.
+You have to start the line as a comment, here is an C++ example
+```C
+// vim:softtabstop=2:shiftwidth=2:expandtab:textwidth=80:cindent
+```
+
 ## Matlab Block Comments
 
 Matlab has the possibility to comment a whole block by
